@@ -1,0 +1,199 @@
+:root {  /* Cria uma pasta de cores (variáveis) para conseguir usar as cores mais facilmente no projeto */
+    --branco-principal: #FFFFFF;
+    --botao-verde: #4CAF50;
+    --botao-verdeescuro: darkgreen;
+    --verdeescrita: rgba(9, 233, 9, 0.877);
+    --cor-de-fundo: #0d1c47;
+    --azul: #2245a3;
+    --fonte-principal: 'Montserrat' , sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: rgb(137,188,235);
+}
+    
+.cabecalho {
+    background: linear-gradient(to left, #2a69ac, #2d1b92);
+    color: var(--branco-principal);
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    border: 6px solid var(--botao-verde)
+}
+
+.fotoperfil {
+    height: 220px;
+    width: 220px;
+    border-radius: 150px;
+    margin-top: 0px;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 14px 25px rgba(0, 0, 0, 0.3);
+    margin-left: 0px
+    
+}
+
+.fotoepc{
+
+    text-align: center;
+    margin: 10px;
+
+
+}
+
+
+.nome {
+    margin: 0px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.infonome{
+    margin: 12px;
+    font-size: 25px;
+    color: var(--verdeescrita);
+    font-style: bold;
+    text-align: center;
+}
+
+
+.perfil {
+    background: linear-gradient(to left, #2a69ac, #2d1b92);
+    color: var(--verdeescrita);
+    font-size: 25px; 
+}
+
+.listahobby {
+    display: flex;
+    list-style-type:  circle;
+    border: 4px solid var(--botao-verde)
+}
+
+.hobby1 {
+    margin-left: 0;
+    list-style-type: none;
+    color: var(--branco-principal);
+}
+
+.hobby {
+margin-left: 100px;
+color: var(--branco-principal);
+text-align: center;
+}
+
+.pc {   
+    width: 200px;
+    height: 200px;
+    margin-left: 60px;
+}
+
+.pc2 {   
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+
+.info {
+    margin-bottom: 25px; /* Ajustando espaço da tabela pro botão de contato */
+}
+
+.tabela {
+
+    background: linear-gradient(to left, #2a69ac, #2d1b92);
+    color: var(--verdeescrita);
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    margin-left: 0px;
+    border-collapse: collapse;
+    border: 6px solid var(--botao-verde)
+}
+
+.respostastabela {
+    color: var(--branco-principal);
+    font-size: 24px;
+    border-bottom: 2px solid var(--botao-verde)
+}
+
+.detalhetabela {
+    color: var(--branco-principal);
+    font-size: 24px;
+    border-bottom: 2px solid var(--botao-verde)
+}
+
+
+.titulotabela {
+    
+        background-color: var(--botao-verde);
+        height: 30px;
+        color: var(--branco-principal);
+        font-size: 26px;
+}
+    
+
+.botao {
+    background-color: var(--botao-verde); 
+    color: var(--branco-principal); 
+    border: none; 
+    padding: 15px 115px; 
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; /* Transição de forma mais suave ao passar o cursor em cima do botao */
+    font-size: 30px;
+    justify-content: center;
+    margin-left: 35%;
+    margin-bottom: 10px
+}
+
+.botao:hover {
+    background-color: var(--botao-verdeescuro); /* Cor do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão quando passar o mouse */
+}
+
+.icon  {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 8px; 
+    font-size: 100px;
+}
+
+.link {
+    text-decoration: none; 
+}
+
+.botaoinsta {
+    background-color: #7a0841;
+    color: var(--branco-principal); 
+    border: none; 
+    padding: 15px 115px; 
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+    font-size: 30px;
+    justify-content: center;
+    margin-left: 36%;
+}
+
+.botaoinsta:hover {
+    background-color: #4b0729; /* Cor do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão quando passar o mouse */
+}
+
+@media screen and (max-width: 768px) {
+
+.perfil {
+    margin: px;
+    font-size: 10px;
+}  
+}
